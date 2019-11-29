@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+import sys, re
+from subprocess import check_output
+
+commit_msg_filepath = sys.argv[1]
+
+branch = check_output(['git', 'symbolic-ref', '--short', 'HEAD']).strip()
+
+if str(branch).startswith('Issue') == False:
+	print "Not an issue branch"
+	sys.exit(0)
+
+issue = branch[5:]
+
+with open(commit_msg_filepath, 'r+') as fh:
+	commit_msg = fh.read()
+	fh.seek(0, 0)
+	fh.write('%s \n %s' % (commit_msg, '(Issue ' + issue + ')'))
