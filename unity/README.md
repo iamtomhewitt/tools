@@ -34,3 +34,10 @@ echo.
 echo Disconnecting from device
 adb disconnect %device_ip%:5555
 ```
+
+### Index Looper
+Have an index of an array or list that you want to set back to 0 when you reach the end, or set to the last index in the list when you've reached the start?
+```csharp
+private int index =0;
+index = ++index > yourListOrArray.Count - 1 ? 0 : index
+```
