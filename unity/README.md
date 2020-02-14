@@ -41,3 +41,6 @@ Have an index of an array or list that you want to set back to 0 when you reach 
 private int index =0;
 index = ++index > yourListOrArray.Count - 1 ? 0 : index
 ```
+
+### Trouble with VSCode and Namespaces
+Try the the comments in the answer from [here](https://answers.unity.com/questions/1696517/20193-unityengineui-and-vs-code.html)
