@@ -27,3 +27,9 @@ fi
 * Press enter
 * Run `git update-ref -d refs/original/refs/heads/master`
 * Run `git push --force --tags origin HEAD:master` 🎉
+
+### Reset tags to align with remote
+```bash
+git tag -l | xargs git tag -d
+git fetch --tags
+```
