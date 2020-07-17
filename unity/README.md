@@ -44,3 +44,6 @@ index = ++index > yourListOrArray.Count - 1 ? 0 : index
 
 ### Trouble with VSCode and Namespaces
 Try the the comments in the answer from [here](https://answers.unity.com/questions/1696517/20193-unityengineui-and-vs-code.html)
+
+### Extract Meshes From a Model
+https://www.reddit.com/r/Unity3D/comments/59pywj/extracting_meshes_from_fbx_files/
